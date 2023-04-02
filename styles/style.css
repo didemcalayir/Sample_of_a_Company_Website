@@ -1,0 +1,462 @@
+body nav {
+  background-color: rgba(194, 234, 246, 0.3);
+}
+
+body nav ul li {
+  width: 8vw;
+  padding-top: 30px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+  z-index: 99;
+}
+body nav ul li a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.5s ease-out;
+}
+body nav ul li:hover {
+  background-color: #d4c995;
+}
+body nav ul li:hover .sub_menu-first {
+  display: block;
+}
+
+body nav ul li:hover .sub_menu-first {
+  position: absolute;
+  width: 8vw;
+  margin-top: 3.4vh;
+  padding: 10px;
+  background-color: rgba(194, 234, 246, 0.3);
+  cursor: pointer;
+}
+body nav ul li:hover .sub_menu-first ul {
+  display: block;
+}
+body nav ul li:hover .sub_menu-first ul li {
+  width: 98%;
+  background-color: transparent;
+  text-align: left;
+  border-bottom: 1px solid #fff;
+}
+body nav ul li:hover .sub_menu-first a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+body nav ul li:hover .sub_menu-first a:hover {
+  color: #d4c995;
+}
+
+body nav ul .in_services-hover:hover .sub_menu-second {
+  position: absolute;
+  width: 8vw;
+  margin-top: -50px;
+  margin-left: 6.5vw;
+  padding: 10px;
+  cursor: pointer;
+}
+body nav ul .in_services-hover:hover .sub_menu-second ul {
+  display: block;
+}
+body nav ul .in_services-hover:hover .sub_menu-second ul li {
+  width: 98%;
+  background-color: transparent;
+  text-align: left;
+  border-bottom: 1px solid #fff;
+  transition: all 0.5s step-end;
+}
+body nav ul .in_services-hover:hover .sub_menu-second a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.5s ease-out;
+}
+body nav ul .in_services-hover:hover .sub_menu-second a:hover {
+  color: #d4c995;
+}
+
+.container-singup, .container, .about {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  width: 450px;
+  height: 620px;
+  margin-top: 30px;
+  border-radius: 5px;
+  background-color: rgba(194, 234, 246, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.container .btn-facebook, .container .btn-twitter, .container .btn-github {
+  display: flex;
+  line-height: 45px;
+  height: 45px;
+  width: 100%;
+  justify-content: baseline;
+  padding-left: 20px;
+  border-radius: 5px;
+  transition: all 0.2s;
+}
+.container .btn-facebook a, .container .btn-twitter a, .container .btn-github a {
+  text-decoration: none;
+  color: white;
+}
+.container .btn-facebook i, .container .btn-twitter i, .container .btn-github i {
+  font-size: 1.5rem;
+  margin-right: 20px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: block;
+  justify-content: center;
+  background: url(../images/bg.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Inter", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+body nav {
+  width: 60%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+body nav ul {
+  display: inline-flex;
+  justify-content: space-between;
+  list-style: none;
+}
+body nav ul li .fa-caret-right {
+  float: right;
+}
+body nav ul .sub_menu-first {
+  display: none;
+}
+body nav ul .sub_menu-second {
+  display: none;
+}
+body nav ul .home, body nav ul .signin {
+  margin: 0 10px;
+  background-color: #d4c995;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+body nav ul .fa-solid, body nav ul .fa-sharp {
+  margin-right: 8px;
+}
+body nav ul .in_services-hover:hover .sub_menu-second {
+  display: block;
+}
+
+.about img {
+  width: 200px;
+  border-radius: 50%;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+  margin-bottom: 10px;
+  margin-top: 30px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.about img:hover {
+  transform: scale(0.9);
+}
+.about h1, .about h5, .about p {
+  padding: 10px 20px 10px 20px;
+  margin-bottom: 10px;
+  font-family: "Times New Roman", Times, serif;
+}
+.about h1 {
+  letter-spacing: 4px;
+  font-size: 2rem;
+}
+.about h5 {
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+.about p {
+  text-align: justify;
+}
+.about .icons {
+  display: inline-flex;
+}
+.about .icons li {
+  list-style: none;
+  margin: 10px;
+}
+.about .icons li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  font-size: 2rem;
+  color: white;
+  background-color: gray;
+  border-radius: 50%;
+  text-decoration: none;
+}
+.about .icons li a i {
+  transition: all 0.5s ease-in-out;
+}
+.about .facebook a:hover {
+  background-color: #254c9a;
+}
+.about .facebook a:hover i {
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.6) rotate(360deg);
+}
+.about .twitter a:hover {
+  background-color: #0db9cc;
+}
+.about .twitter a:hover i {
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.6) rotate(360deg);
+}
+.about .instagram a:hover {
+  background-color: #dc54ca;
+}
+.about .instagram a:hover i {
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.4) rotate(360deg);
+}
+.about .git-hub a:hover {
+  background-color: rgb(7, 7, 7);
+}
+.about .git-hub a:hover i {
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.4) rotate(360deg);
+}
+.about .comment {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+  padding: 0;
+  font-size: 0.7rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(219, 219, 219);
+}
+.about .comment div {
+  margin: 20px;
+  text-align: center;
+}
+
+.container {
+  max-width: 350px;
+  padding: 10px;
+  align-items: baseline;
+}
+.container .logo {
+  position: absolute;
+  left: 60%;
+  width: 120px;
+  border-radius: 50%;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border: 5px solid rgb(2, 129, 157);
+}
+.container form {
+  padding: 15px;
+  width: 100%;
+  position: relative;
+}
+.container form .title {
+  position: relative;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 80px 0 10px 20px;
+}
+.container form .title::before {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 33px;
+  bottom: 2px;
+  background-color: rgb(2, 129, 157);
+}
+.container form .input-box {
+  width: 100%;
+  height: 45px;
+  margin-top: 25px;
+  position: relative;
+}
+.container form .input-box input {
+  height: 100%;
+  width: 100%;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  background-color: rgba(194, 234, 246, 0.3);
+}
+.container form .input-box input:focus ~ .underline::after, .container form .input-box input:valid ~ .underline::after {
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: all 0.5s;
+}
+.container form .input-box input[type=submit] {
+  background-color: red;
+  color: white;
+  border-radius: 7px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.container form .input-box input[type=submit]:hover {
+  letter-spacing: 1px;
+  background: rgb(194, 234, 246);
+  color: red;
+  font-weight: bold;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.734);
+}
+.container form .underline::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background: #ccc;
+}
+.container form .underline::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: rgb(171, 5, 5);
+  transform: scaleX(0);
+  transform-origin: left;
+}
+.container .sec-text {
+  position: relative;
+  margin: 5px auto;
+  font-size: 14px;
+}
+.container .btn-github {
+  background-color: #25292e;
+  margin: 20px 0 5px 0;
+}
+.container .btn-github:hover {
+  background-color: #627082;
+}
+.container .btn-twitter {
+  background-color: #1ad1f2;
+  margin: 5px 0 5px 0;
+}
+.container .btn-twitter:hover {
+  background-color: #9be4f1;
+}
+.container .btn-facebook {
+  background-color: #4267b2;
+  margin: 5px 0 5px 0;
+}
+.container .btn-facebook:hover {
+  background-color: #7794cd;
+}
+
+.container-singup {
+  max-width: 350px;
+  padding: 10px;
+  align-items: baseline;
+  background: url(/images/signup.jpg) no-repeat;
+  background-size: auto;
+  opacity: 0.8;
+}
+.container-singup form {
+  padding: 15px;
+  width: 100%;
+  position: relative;
+}
+.container-singup form .title-singup {
+  position: relative;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 80px 0 10px 20px;
+}
+.container-singup form .title-singup::before {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 45px;
+  bottom: 2px;
+  background-color: rgb(2, 129, 157);
+}
+.container-singup form .input-box-singup {
+  width: 100%;
+  height: 45px;
+  margin-top: 25px;
+  position: relative;
+}
+.container-singup form .input-box-singup input {
+  height: 100%;
+  width: 100%;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  background-color: rgba(194, 234, 246, 0.3);
+}
+.container-singup form .input-box-singup input:focus ~ .underline::after, .container-singup form .input-box-singup input:valid ~ .underline::after {
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: all 0.5s;
+}
+.container-singup form .input-box-singup input[type=submit] {
+  background-color: #254c9a;
+  color: white;
+  border-radius: 20px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.container-singup form .input-box-singup input[type=submit]:hover {
+  letter-spacing: 1px;
+  background: #a7c4fe;
+  color: rgb(228, 3, 3);
+  font-weight: bold;
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.734);
+}
+.container-singup form .underline::before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background: #ccc;
+}
+.container-singup form .underline::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: rgb(171, 5, 5);
+  transform: scaleX(0);
+  transform-origin: left;
+}
+.container-singup .sec-text-singup {
+  position: relative;
+  margin: 5px auto;
+  font-size: 14px;
+}
+.container-singup .sec-text-singup a {
+  text-decoration: none;
+  color: white;
+}
+.container-singup .sec-text-singup a:hover {
+  color: rgb(217, 3, 3);
+}/*# sourceMappingURL=style.css.map */
